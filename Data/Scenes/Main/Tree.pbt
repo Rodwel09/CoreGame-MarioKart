@@ -18,7 +18,8 @@ Objects {
   ChildIds: 16813558807825262224
   ChildIds: 14713340454944924967
   ChildIds: 10005074784157121906
-  ChildIds: 15313895667744767364
+  ChildIds: 3718662454289489819
+  ChildIds: 15300328923293044906
   UnregisteredParameters {
   }
   Collidable_v2 {
@@ -34,11 +35,69 @@ Objects {
   }
 }
 Objects {
-  Id: 15313895667744767364
+  Id: 15300328923293044906
+  Name: "WaterCube"
+  Transform {
+    Location {
+      X: 5800
+      Y: -1100
+      Z: 1050
+    }
+    Rotation {
+      Pitch: -1.67288208
+      Yaw: 84.8963776
+      Roll: -86.8861084
+    }
+    Scale {
+      X: 46.5
+      Y: 0.75
+      Z: 37.2499924
+    }
+  }
+  ParentId: 4781671109827199097
+  UnregisteredParameters {
+    Overrides {
+      Name: "ma:Shared_BaseMaterial:id"
+      AssetReference {
+        Id: 2341242144152827756
+      }
+    }
+  }
+  Collidable_v2 {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  Visible_v2 {
+    Value: "mc:evisibilitysetting:inheritfromparent"
+  }
+  CameraCollidable {
+    Value: "mc:ecollisionsetting:inheritfromparent"
+  }
+  EditorIndicatorVisibility {
+    Value: "mc:eindicatorvisibility:visiblewhenselected"
+  }
+  CoreMesh {
+    MeshAsset {
+      Id: 10919969168140671810
+    }
+    Teams {
+      IsTeamCollisionEnabled: true
+      IsEnemyCollisionEnabled: true
+    }
+    StaticMesh {
+      Physics {
+        Mass: 100
+        LinearDamping: 0.01
+      }
+      BoundsScale: 1
+    }
+  }
+}
+Objects {
+  Id: 3718662454289489819
   Name: "Terrain"
   Transform {
     Location {
-      Z: -1650
+      X: -950
     }
     Rotation {
     }
@@ -63,9 +122,9 @@ Objects {
   }
   Terrain {
     Material {
-      Id: 841534158063459245
+      Id: 7512725601914214900
     }
-    VoxelSize: 100
+    VoxelSize: 50
     OctreeDepth: 5
     GeneratorID: "DEPRECATED"
   }
@@ -75,7 +134,8 @@ Objects {
   Name: "Default Sky"
   Transform {
     Location {
-      Z: 700
+      Y: 5350
+      Z: 1800
     }
     Rotation {
     }
@@ -426,7 +486,8 @@ Objects {
   Name: "Third Person Camera Settings"
   Transform {
     Location {
-      Z: 100
+      Y: 4800
+      Z: 1600
     }
     Scale {
       X: 1
@@ -615,7 +676,9 @@ Objects {
   Name: "Spawn Point"
   Transform {
     Location {
-      Z: 1900
+      X: -11200
+      Y: -11250
+      Z: 3400
     }
     Rotation {
     }
